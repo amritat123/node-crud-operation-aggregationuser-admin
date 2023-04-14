@@ -1,9 +1,9 @@
 // Main entry file for  the application
-const DB = require("./db/database");
+const DB = require("./api/db/database");
 require("dotenv").config();
 const express = require('express');
-const adminRouter = require("./route/admin");
-const userRouter = require("./route/user");
+const adminRouter = require("./api/route/admin");
+const userRouter = require("./api/route/user");
 const app = express()
 
 app.use(express.json())
